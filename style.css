@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -211,6 +211,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -234,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -492,6 +494,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -542,6 +548,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .visible {
@@ -580,60 +590,20 @@ video {
   display: none;
 }
 
-.w-\[\] {
-  width: ;
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-\[70px\] {
   width: 70px;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-\[50\] {
-  width: 50;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[100\] {
-  width: 100;
-}
-
-.w-\[1\] {
-  width: 1;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
 .w-\[90\%\] {
   width: 90%;
 }
 
-.w-\[95\%\] {
-  width: 95%;
-}
-
-.w-\[8\%\] {
-  width: 8%;
-}
-
-.w-\[\%\] {
-  width: %;
-}
-
-.w-\[7\%\] {
-  width: 7%;
-}
-
-.w-\[85\%\] {
-  width: 85%;
+.w-\[80px\] {
+  width: 80px;
 }
 
 .border-collapse {
@@ -668,36 +638,32 @@ video {
   justify-content: space-evenly;
 }
 
-.gap-8 {
-  gap: 2rem;
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-20 {
   gap: 5rem;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
+.gap-8 {
+  gap: 2rem;
 }
 
 .rounded {
   border-radius: 0.25rem;
 }
 
-.rounded-\[\] {
-  border-radius: ;
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-\[50px\] {
   border-radius: 50px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-l-2xl {
@@ -709,13 +675,9 @@ video {
   border-width: 1px;
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#157784\] {
+.bg-\[\#3f8ca8\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(21 119 132 / var(--tw-bg-opacity));
+  background-color: rgb(63 140 168 / var(--tw-bg-opacity));
 }
 
 .bg-\[white\] {
@@ -723,16 +685,24 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-3 {
-  padding: 0.75rem;
+.p-1 {
+  padding: 0.25rem;
 }
 
 .p-2 {
   padding: 0.5rem;
 }
 
-.p-1 {
-  padding: 0.25rem;
+.p-3 {
+  padding: 0.75rem;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .underline {
@@ -741,4 +711,32 @@ video {
 
 .outline {
   outline-style: solid;
+}
+
+.visited\:border-spacing-10:visited {
+  --tw-border-spacing-x: 2.5rem;
+  --tw-border-spacing-y: 2.5rem;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+}
+
+.visited\:border:visited {
+  border-width: 1px;
+}
+
+.visited\:border-\[\]:visited {
+  border-color: ;
+}
+
+.visited\:bg-white:visited {
+  background-color: rgb(255 255 255 );
+}
+
+.active\:bg-black:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.active\:text-indigo-600:active {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
 }

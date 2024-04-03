@@ -8,7 +8,7 @@ const data = async () => {
         ayat.forEach(element => {
             console.log(element);
             surrahName.innerHTML = `${ayah.data.data.nama}`;
-            compSurah.innerHTML +=  `<p class='ayano'>${element.nomorAyat} </p>${element.teksArab}`;
+            compSurah.innerHTML += `<p class='ayano'>${element.nomorAyat} </p>${element.teksArab}`;
 
         });
     } catch (error) {
@@ -17,3 +17,7 @@ const data = async () => {
 }
 
 data()
+
+// for (let i = 1; i <= 100; i++) {
+//     console.log('i love you')
+// }
